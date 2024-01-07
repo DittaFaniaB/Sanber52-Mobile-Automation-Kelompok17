@@ -9,6 +9,9 @@ Test Setup        Run Keywords
 
 Test Teardown     Close Application
 
+*** Variables ***
+${START_DATE}            19 August 2019
+${END_DATE}              21 August 2019
 
 *** Test Cases ***
 
@@ -29,9 +32,9 @@ TC0001 - User should be able to book flight with option Round Trip
     # 6. input class
     Fill Class Field on Book Flight Page
     # 7. input start date
-    Fill Start Date Field on Book Flight Page        16 August 2019
+    Fill Start Date Field on Book Flight Page        ${START_DATE}
     # 8. input end date
-    Fill End Date Field on Book Flight Page          18 August 2019
+    Fill End Date Field on Book Flight Page          ${END_DATE}
     # 9. click radio button for option flight or flight + hotel
     Fill Flight Type on Book Flight Page
     # 10. click book button on book flight page
@@ -39,7 +42,7 @@ TC0001 - User should be able to book flight with option Round Trip
     # 11. verify that user redirect to confirmation page 
     Validate redirect page on book confirmation
 
-TC0002 -User should not be able to book flight Round Trip with empty field 
+TC0002 - User should not be able to book flight Round Trip with empty field 
     ##### NOTES:EXPECTED TO BE FAILED BECAUSE A VALID ISSUE ON THE APPLICATION #####
     # Precondition: User is already logged in with valid credentials
     # step : 
@@ -55,7 +58,7 @@ TC0002 -User should not be able to book flight Round Trip with empty field
     # 5. verify error message 
     Verify error message for empty field on Book Flight Page
     
-TC0003 -User should not be able to book flight Round Trip with invalid date range
+TC0003 - User should not be able to book flight Round Trip with invalid date range
     ##### NOTES:EXPECTED TO BE FAILED BECAUSE A VALID ISSUE ON THE APPLICATION #####
     # Precondition: User is already logged in with valid credentials
     # step : 
@@ -73,9 +76,9 @@ TC0003 -User should not be able to book flight Round Trip with invalid date rang
     # 6. input class
     Fill Class Field on Book Flight Page
     # 7. input start date
-    Fill Start Date Field on Book Flight Page            18 August 2019
+    Fill Start Date Field on Book Flight Page            ${END_DATE}
     # 8. input end date
-    Fill End Date Field on Book Flight Page              14 August 2019
+    Fill End Date Field on Book Flight Page              ${START_DATE}
     # 9. click radio button for option flight or flight + hotel
     Fill Flight Type on Book Flight Page
     # 10. click book button on book flight page
