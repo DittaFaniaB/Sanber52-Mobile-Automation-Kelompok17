@@ -12,7 +12,6 @@ Test Setup        Run Keywords
 
 Test Teardown    Close Application
 
-
 *** Test Cases ***
 
 User should be able to login with valid credentials
