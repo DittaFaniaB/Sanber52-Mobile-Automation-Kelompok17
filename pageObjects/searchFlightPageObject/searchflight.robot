@@ -27,4 +27,4 @@ Click the search button on the search page
 #    Wait Until Element Is Visible            ${notification_invalid_flightNumber}
 #    Wait Until Page Contains            ${notification_invalid_flightNumber}
 
-# saya sudah mencoba semua kemungkinan cara tapi tetap tidak bisa membaca notifikasi
+# saya sudah mncoba semua kemungkinan cara tapi tetap tidak bisa membaca notifikasi

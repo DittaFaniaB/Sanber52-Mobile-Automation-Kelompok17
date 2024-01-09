@@ -2,7 +2,7 @@
 
 ## Pembagian tugas
 
-1. Kahfin Ilham = Search 
+1. Kahfin Ilham = Search. 
 
 2. Hanifah Putri Alamsyah = Confirm Booking
 
