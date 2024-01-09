@@ -18,3 +18,6 @@ Verify Book Button Exists on Home Page
     
 Click Book button on Home Page
     Click Element                    ${book_button_homePage}
+
+Click Search button on Home Page
+    Click Element                    ${search_button_homePage}                       
