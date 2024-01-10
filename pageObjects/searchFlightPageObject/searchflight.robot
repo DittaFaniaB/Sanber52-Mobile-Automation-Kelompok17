@@ -23,8 +23,13 @@ Click the search button on the search page
     Wait Until Element Is Visible            ${search_button_searchPage}    
     Click Element                            ${search_button_searchPage} 
 
-# Notification of invalid flight number
+Verify the flight list page appears
+    Wait Until Element Is Visible        ${flightListPage}
+
+Notification of invalid flight number
 #    Wait Until Element Is Visible            ${notification_invalid_flightNumber}
 #    Wait Until Page Contains            ${notification_invalid_flightNumber}
+    Wait Until Page Contains            Please enter valid Flight Number
 
-# saya sudah mncoba semua kemungkinan cara tapi tetap tidak bisa membaca notifikasi
+
+

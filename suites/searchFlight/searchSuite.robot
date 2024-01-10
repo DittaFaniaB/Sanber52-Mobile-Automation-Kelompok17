@@ -2,7 +2,6 @@
 Resource    ../../pageObjects/homePageObject/homePage.robot
 Resource    ../../pageObjects/loginPageObject/loginPage.robot
 Resource    ../../pageObjects/searchFlightPageObject/searchflight.robot
-Resource    ../../pageObjects/flightListPageObject/flightList.robot
 
 Test Setup        Run Keywords
 ...               Open Flight Application 
@@ -43,9 +42,8 @@ TC0002 - User fills the search field with an invalid flight number
     # 4. Click the search button on the search page
     Click the search button on the search page
     # 5. a pop up appears saying "Please enter valid flight number"
-    # Notification of invalid flight number
+    Notification of invalid flight number
 
-    # saya sudah mencoba semua kemungkinan cara tapi tetap tidak bisa membaca notifikasi 
 
 TC0003 - User click the search button without filling in the search field
     # Precondition: User is already logged in with valid credentials
@@ -58,8 +56,7 @@ TC0003 - User click the search button without filling in the search field
     # 3. Click the search button on the search page
     Click the search button on the search page
     # 4. a pop up appears saying "Please enter valid flight number"
-    # Notification of invalid flight number
+    Notification of invalid flight number
 
-    # saya sudah mencoba semua kemungkinan cara tapi tetap tidak bisa membaca notifikasi
 
   
